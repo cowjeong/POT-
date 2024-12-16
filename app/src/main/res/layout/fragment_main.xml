@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.pot.ui.theme.fragment.MainFragment">
+
+    <!-- 유저 아이콘 -->
+    <ImageView
+        android:id="@+id/imgUserIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/user_icon"
+        android:contentDescription="@string/user_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ExercisePot 이미지 -->
+    <ImageView
+        android:id="@+id/imgExercisePot"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="448dp"
+        android:contentDescription="@string/exercise_pot"
+        android:src="@drawable/exercisepot"
+        app:layout_constraintEnd_toStartOf="@id/imgTaxiPot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.24" />
+
+    <!-- TaxiPot 이미지 -->
+    <ImageView
+        android:id="@+id/imgTaxiPot"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="448dp"
+        android:contentDescription="@string/taxi_pot"
+        android:src="@drawable/taxipot"
+        app:layout_constraintEnd_toStartOf="@id/imgStudyPot"
+        app:layout_constraintStart_toEndOf="@id/imgExercisePot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.24" />
+
+    <!-- StudyPot 이미지 -->
+    <ImageView
+        android:id="@+id/imgStudyPot"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="448dp"
+        android:contentDescription="@string/study_pot"
+        android:src="@drawable/studypot"
+        app:layout_constraintEnd_toStartOf="@id/imgMealPot"
+        app:layout_constraintStart_toEndOf="@id/imgTaxiPot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.24" />
+
+    <!-- MealPot 이미지 -->
+    <ImageView
+        android:id="@+id/imgMealPot"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="448dp"
+        android:contentDescription="@string/meal_pot"
+        android:src="@drawable/mealpot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgStudyPot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.24" />
+
+    <!-- 하단 메뉴 Home 아이콘 -->
+    <ImageView
+        android:id="@+id/imgHomeIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/home_icon"
+        android:src="@drawable/home_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBoardIcon"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 하단 메뉴 Board 아이콘 -->
+    <ImageView
+        android:id="@+id/imgBoardIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/board_icon"
+        android:src="@drawable/board_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgChatIcon"
+        app:layout_constraintStart_toEndOf="@id/imgHomeIcon" />
+
+    <!-- 하단 메뉴 Chat 아이콘 -->
+    <ImageView
+        android:id="@+id/imgChatIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/chat_icon"
+        android:src="@drawable/chat_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBoardIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

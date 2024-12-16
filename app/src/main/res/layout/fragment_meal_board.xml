@@ -1,0 +1,97 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meal_board"
+    tools:context=".ui.theme.fragment.MealBoardFragment">
+
+    <!-- 뒤로가기 버튼 -->
+    <ImageView
+        android:id="@+id/imgBackIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/back_icon"
+        android:contentDescription="@string/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 하단 메뉴 Home 아이콘 -->
+    <ImageView
+        android:id="@+id/imgHomeIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/home_icon"
+        android:src="@drawable/home_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBoardIcon"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 하단 메뉴 Board 아이콘 -->
+    <ImageView
+        android:id="@+id/imgBoardIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/board_icon"
+        android:src="@drawable/board_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgChatIcon"
+        app:layout_constraintStart_toEndOf="@id/imgHomeIcon" />
+
+    <!-- 하단 메뉴 Chat 아이콘 -->
+    <ImageView
+        android:id="@+id/imgChatIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/chat_icon"
+        android:src="@drawable/chat_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBoardIcon" />
+
+
+    <ImageView
+        android:id="@+id/etcButton"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="364dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/etc_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/searchButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/prime_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/writeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/write_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="338dp"
+        android:layout_height="512dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

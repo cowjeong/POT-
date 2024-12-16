@@ -1,0 +1,55 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat"
+    tools:context=".ui.theme.fragment.ChatFragment">
+
+    <!-- 뒤로가기 버튼 -->
+    <ImageView
+        android:id="@+id/imgBackIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/back_icon"
+        android:contentDescription="@string/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 하단 메뉴 Home 아이콘 -->
+    <ImageView
+        android:id="@+id/imgHomeIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/home_icon"
+        android:src="@drawable/home_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBoardIcon"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 하단 메뉴 Board 아이콘 -->
+    <ImageView
+        android:id="@+id/imgBoardIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/board_icon"
+        android:src="@drawable/board_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgChatIcon"
+        app:layout_constraintStart_toEndOf="@id/imgHomeIcon" />
+
+    <!-- 하단 메뉴 Chat 아이콘 -->
+    <ImageView
+        android:id="@+id/imgChatIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/chat_icon"
+        android:src="@drawable/chat_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBoardIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
